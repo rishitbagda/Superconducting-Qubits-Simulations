@@ -1,0 +1,24 @@
+Validation performed 2026-11-14
+
+PASS: original/jj_rcsj.sv and original/tb_jj.sv are byte-for-byte equal to
+      the corresponding entries in the supplied new (3).zip.
+PASS: Icarus Verilog 11.0 compiled and executed the original testbench.
+      82 measurement rows, no source modifications. Log and CSV included.
+PASS: tb_board_ui simulation: reset, bias scaling and clamping, run, pause,
+      voltage/phase evolution, page selection and full-frame display capture.
+PASS: Added SystemVerilog syntax checked using pyslang 12.1.0.
+      Original files only report their existing missing final newline.
+PASS: Top-level elaboration with interface-only IBUF/BUFG/MMCME2_BASE stubs.
+      This checks connections, NOT vendor clock behavior or synthesis.
+PASS: Tcl scripts structurally complete according to Tcl info complete.
+      Vivado commands have NOT been executed here.
+
+Icarus emitted sensitivity-list notices for constant selects in always_comb:
+all bits are included in its sensitivity analysis. These were not compile
+errors and the simulations completed.
+
+NOT RUN: Vivado synthesis/implementation, timing closure, DRC, bitstream
+         generation, UNISIM clock simulation or physical FPGA tests.
+NOT CLAIMED: exhaustive physics validation or numerical convergence testing.
+
+No original source bugs or event-scheduling concerns were corrected.
